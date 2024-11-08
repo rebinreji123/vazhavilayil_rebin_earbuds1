@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="css/main.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="model/earbuds.gltf " ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="./images/poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="-512.4438288315816m 189.93306268979686m -229.28368221959704m" data-normal="0.21449207929709752m 0.07707634459261407m 0.973679816481295m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-1">
+
+          </div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-595.3180316777406m 351.27261060991594m -315.8071479123446m" data-normal="0.9401154636850875m 0.1879104611898766m 0.28438103578751694m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-2">
+
+          </div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-693.9650404601434m 280.3655689845719m -344.04748890610426m" data-normal="-0.9535626633312685m -0.0778082237585605m -0.29097100786180674m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-3"
+          ></div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-658.9416325448556m 329.260088786959m -213.51241492018926m" data-normal="-0.16337220981387013m -0.3230079790209181m -0.9321884823088918m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-4">
+          </div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="images/ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="js/script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  </body>
+</html>
